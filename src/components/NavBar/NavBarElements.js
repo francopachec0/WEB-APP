@@ -39,6 +39,27 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+`;
+
+export const NavLogoMobile = styled(LinkR)`
+  display: none;
+
+  @media screen and (max-width: 850px) {
+    display: block;
+    color: #e85d04;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 `;
 
 export const MobileIcon = styled.div`

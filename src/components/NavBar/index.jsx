@@ -9,6 +9,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  NavLogoMobile
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 
@@ -18,6 +19,7 @@ const NavBar = () => {
       <Nav>
         <NavBarContainer>
           <NavLogo to="/">PACHECO Impresiones</NavLogo>
+          <NavLogoMobile to='/'>P Impresiones</NavLogoMobile>
           <MobileIcon>
             <FaBars />
           </MobileIcon>
