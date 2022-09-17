@@ -14,12 +14,13 @@ import {
 import { FaBars } from "react-icons/fa";
 
 const NavBar = () => {
+
   return (
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">PACHECO Impresiones</NavLogo>
-          <NavLogoMobile to='/'>P Impresiones</NavLogoMobile>
+          <NavLogo to="/">PACHECO <span>Impresiones</span></NavLogo>
+          <NavLogoMobile to='/'>P <span>Impresiones</span></NavLogoMobile>
           <MobileIcon>
             <FaBars />
           </MobileIcon>

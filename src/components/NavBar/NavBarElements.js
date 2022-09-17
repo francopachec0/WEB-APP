@@ -43,6 +43,14 @@ export const NavLogo = styled(LinkR)`
   @media screen and (max-width: 850px) {
     display: none;
   }
+
+  span {
+    color: #e85d04;
+    margin-left: 6px;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  }
 `;
 
 export const NavLogoMobile = styled(LinkR)`
@@ -59,6 +67,13 @@ export const NavLogoMobile = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+  }
+
+  span {
+    color: #e85d04;
+    margin-left: 6px;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
   }
 `;
 
