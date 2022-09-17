@@ -13,7 +13,7 @@ import {
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
 
   return (
     <>
@@ -21,7 +21,7 @@ const NavBar = () => {
         <NavBarContainer>
           <NavLogo to="/">PACHECO <span>Impresiones</span></NavLogo>
           <NavLogoMobile to='/'>P <span>Impresiones</span></NavLogoMobile>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
