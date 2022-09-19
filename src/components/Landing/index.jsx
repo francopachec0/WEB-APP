@@ -10,7 +10,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./LandingElements";
-import Video from "../../video/video3.mp4";
+import Video from "../../video/video2.mp4";
 import { useState } from "react";
 import { Button } from "../ButtonElements";
 
@@ -27,8 +27,8 @@ export const Landing = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </LandingBg>
       <LandingContent>
-        <LandingH1>Aqui va un H1</LandingH1>
-        <LandingP>Este seria un parrafo P que lo tengo q pensar todavia</LandingP>
+        <LandingH1>PACHECO Impresiones</LandingH1>
+        <LandingP>¡Conoce lo que te ofrecemos aquí!</LandingP>
         <LandingBtnWrapper>
           <Button
             to="contact"
@@ -37,7 +37,7 @@ export const Landing = () => {
             primary="true"
             dark="true"
           >
-            ¡CONTACTANOS! {hover ? <ArrowForward /> : <ArrowRight />}
+            SERVICIOS {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </LandingBtnWrapper>
       </LandingContent>

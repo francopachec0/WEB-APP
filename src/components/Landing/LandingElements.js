@@ -61,6 +61,7 @@ export const LandingH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
+  font-weight: bold;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -75,6 +76,7 @@ export const LandingP = styled.p`
   margin-top: 24px;
   color: #fff;
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
   max-width: 600px;
 
