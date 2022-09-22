@@ -51,3 +51,21 @@ export const homeObjThree = {
   primary: true,
   darkText: false,
 };
+
+export const homeObjFour = {
+    id: "contact",
+    lightBg: true,
+    lightText: false,
+    lightTextDescr: false,
+    title: "Contacto",
+    headline: "¿Tenés alguna pregunta?",
+    description:
+    'Al +54 3854096894 o sí no tambien a nuestro teléfono secundario +54 3856254495',
+    buttonName: "ENVIANOS UN MENSAJE",
+    imgStart: true,
+    img: require("../../images/imagen4.png"),
+    alt: "contact",
+    dark: false,
+    primary: false,
+    darkText: true,
+  };
