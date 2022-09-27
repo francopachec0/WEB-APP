@@ -131,7 +131,7 @@ const Footer = () => {
   </FooterLinksContainer>*/}
         <SocialMedia>
           <SocialMediaWrapper>
-            <SocialLogo to="/inicio">PACHECO Impresiones</SocialLogo>
+            <SocialLogo to="inicio">PACHECO Impresiones</SocialLogo>
             <WebSiteRights>
               PACHECO Impresiones © {new Date().getFullYear()}. Todos los
               derechos reservados.
