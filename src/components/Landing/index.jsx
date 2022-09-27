@@ -22,7 +22,7 @@ export const Landing = () => {
   };
 
   return (
-    <LandingContainer>
+    <LandingContainer id="inicio">
       <LandingBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </LandingBg>
