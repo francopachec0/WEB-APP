@@ -22,8 +22,14 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -131,9 +137,9 @@ const Footer = () => {
   </FooterLinksContainer>*/}
         <SocialMedia>
           <SocialMediaWrapper>
-            <SocialLogo to="inicio">PACHECO Impresiones</SocialLogo>
+            <SocialLogo to='inicio' onClick={toggleHome}>PACHECO Impresiones</SocialLogo>
             <WebSiteRights>
-              PACHECO Impresiones © {new Date().getFullYear()}.<br />Todos los
+              PACHECO Impresiones © {new Date().getFullYear()} <br />Todos los
               derechos reservados
             </WebSiteRights>
             <SocialIcons>

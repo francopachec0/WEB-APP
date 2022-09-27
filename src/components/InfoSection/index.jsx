@@ -33,6 +33,21 @@ const InfoSection = ({
   dark2,
   lightTextDescr,
 }) => {
+
+  const buttonChange = () => {
+    if (buttonName === 'GOOGLE MAPS') {
+      return <a href="https://goo.gl/maps/LxMM5s4B5ntoJRdDA" target="_blank" rel="noopener noreferrer">GOOGLE MAPS</a>
+    } else if (buttonName === 'ENVIANOS UN MENSAJE') {
+      return <a href="https://wa.me/+543854096894"
+      target="_blank"
+      rel="noopener noreferrer">ENVIANOS UN MENSAJE</a>
+    } else {
+      return buttonName
+    }
+  }
+
+  const abc = buttonChange()
+
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
@@ -44,12 +59,12 @@ const InfoSection = ({
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrapper>
                 <Button
-                  to="home"
+                  to={id === 'about' ? 'services' : 'ubication'}
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={45}
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                   dark2={dark2 ? 1 : 0}

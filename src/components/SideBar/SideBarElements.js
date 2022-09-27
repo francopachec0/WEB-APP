@@ -76,7 +76,7 @@ export const SideBarBtnWrapper = styled.div`
   justify-content: center;
 `;
 
-export const SideBarRoute = styled(LinkR)`
+export const SideBarRoute = styled(LinkS)`
   border-radius: 50px;
   background: #e85d04;
   white-space: nowrap;

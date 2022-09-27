@@ -31,7 +31,12 @@ export const Landing = () => {
         <LandingP>¡Conoce lo que te ofrecemos aquí!</LandingP>
         <LandingBtnWrapper>
           <Button
-            to="contact"
+            to="services"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={45}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
