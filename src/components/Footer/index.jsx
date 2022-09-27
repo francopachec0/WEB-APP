@@ -133,8 +133,8 @@ const Footer = () => {
           <SocialMediaWrapper>
             <SocialLogo to="inicio">PACHECO Impresiones</SocialLogo>
             <WebSiteRights>
-              PACHECO Impresiones © {new Date().getFullYear()}. Todos los
-              derechos reservados.
+              PACHECO Impresiones © {new Date().getFullYear()}.<br />Todos los
+              derechos reservados
             </WebSiteRights>
             <SocialIcons>
               <SocialIconLink
@@ -167,7 +167,10 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrapperDeveloper>
             <WebSiteRights>
-              {"< "}App Desarrollada por Franco Pacheco, Frontend Developer 🧡{" />"}
+              App Desarrollada por Franco Pacheco
+            </WebSiteRights>
+            <WebSiteRights>
+              {"< "}Frontend Developer 🧡{" />"}
             </WebSiteRights>
           </SocialMediaWrapperDeveloper>
           <SocialMediaWrapperDeveloper>

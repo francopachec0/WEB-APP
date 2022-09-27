@@ -144,6 +144,11 @@ export const SocialMediaWrapperDeveloper = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
+  gap: 6px;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
 `;
 
 
