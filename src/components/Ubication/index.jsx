@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { ButtonA } from "../ButtonAElements";
 
 import {
   BtnWrapper,
@@ -14,16 +14,12 @@ import {
   Subtitle,
   TextWrapper,
   TopLine,
-} from "./InfoSectionElements";
+} from "../InfoSection/InfoSectionElements";
 
-const InfoSection = ({
+const UbicationSection = ({
   id,
   lightBg,
   lightText,
-  title,
-  headline,
-  description,
-  buttonName,
   imgStart,
   img,
   alt,
@@ -32,30 +28,26 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
-
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              <TopLine>{title}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
+              <TopLine>Ubicación</TopLine>
+              <Heading lightText={lightText}>¡Aquí podés encontrarnos!</Heading>
+              <Subtitle darkText={darkText}>
+                Avenida Aguirre Sur N° 1426 Barrio Primera Junta, Santiago del
+                Estero Capital, Argentina.
+              </Subtitle>
               <BtnWrapper>
-                <Button
-                  to={id === 'about' ? 'services' : 'ubication'}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={45}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}
+                <ButtonA
+                  href="https://goo.gl/maps/LxMM5s4B5ntoJRdDA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {buttonName}
-                </Button>
+                  GOOGLE MAPS
+                </ButtonA>
               </BtnWrapper>
             </TextWrapper>
           </Column1>
@@ -70,4 +62,4 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default UbicationSection;

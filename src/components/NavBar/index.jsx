@@ -26,7 +26,7 @@ const NavBar = ({ toggle }) => {
           <NavLogo to="/" onClick={toggleHome}>
             PACHECO <span>Impresiones</span>
           </NavLogo>
-          <NavLogoMobile to="/">
+          <NavLogoMobile to="/" onClick={toggleHome}>
             P <span>Impresiones</span>
           </NavLogoMobile>
           <MobileIcon onClick={toggle}>

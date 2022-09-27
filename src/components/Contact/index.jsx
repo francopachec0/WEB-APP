@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { ButtonA } from "../ButtonAElements";
 
 import {
   BtnWrapper,
@@ -14,16 +14,12 @@ import {
   Subtitle,
   TextWrapper,
   TopLine,
-} from "./InfoSectionElements";
+} from "../InfoSection/InfoSectionElements";
 
-const InfoSection = ({
+const ContactSection = ({
   id,
   lightBg,
   lightText,
-  title,
-  headline,
-  description,
-  buttonName,
   imgStart,
   img,
   alt,
@@ -32,30 +28,26 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
-
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              <TopLine>{title}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
+              <TopLine>Contacto</TopLine>
+              <Heading lightText={lightText}>¿Tenés alguna pregunta?</Heading>
+              <Subtitle darkText={darkText}>
+                Al +54 3854096894 o sí no tambien a nuestro teléfono secundario
+                +54 3856254495
+              </Subtitle>
               <BtnWrapper>
-                <Button
-                  to={id === 'about' ? 'services' : 'ubication'}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={45}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}
+                <ButtonA
+                  href="https://wa.me/+543854096894"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {buttonName}
-                </Button>
+                  ENVIANOS UN MENSAJE
+                </ButtonA>
               </BtnWrapper>
             </TextWrapper>
           </Column1>
@@ -70,4 +62,4 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default ContactSection;
